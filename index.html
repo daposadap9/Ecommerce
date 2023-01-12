@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home GYM</title>
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+  <!--=============== GOOGLE FONTS ===============-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!--============================================================-->
+  <!-- Fondos agregados AUDIOWIDE -->
+  <!--  font-family: 'Audiowide', cursive; -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <!--============================================================-->
+  <!--=============== ICONS ===============-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="css/style.css">
+  <!--=============== MAIN JS ===============-->
+  <script src="js/main.js" type="module" defer></script>
+</head>
+
+<body>
+
+  <!--=============== HEADER ===============-->
+  <header class="header">
+    <nav class="navbar grid--container">
+      <a href="#" class="navbar__logo">
+        <!-- <i class='bx bxs-cart-alt'></i> -->
+        <i id="#" class="LogoG"><img src="img/Logo.png" alt="Logo GYM"></i>
+        <span>Home GYM</span>
+      </a>
+      <!-- Menu -->
+      <div class="navbar__menu">
+        <!-- Cerrar menu -->
+        <button class="button navbar__close">
+          <!-- ícono de cierre y estilos-->
+          <i class="bx bx-x button--icon"></i>
+        </button>
+
+        <!-- Lista de navegación -->
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="#productos" class="navbar__link">
+              <span>Productos</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="#nosotros" class="navbar__link">
+              <span>Nosotros</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+      <!-- Botonera -->
+      <div class="navbar__buttons">
+        <button type="button" class="button navbar__wish">
+          <i class="bx bxs-heart-circle button--icon"></i>
+        </button>
+        <button type="button" class="button navbar__cart">
+          <i class="bx bxs-cart-alt button--icon"></i>
+        </button>
+        <button type="button" class="button navbar__toggle">
+          <i class="bx bx-menu button--icon"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <div class="hero grid--container">
+    <!-- Lineas de modificacion de estilos del hero en lienas: 267 y 494 carperta Style -->
+    <h2>Home GYM Tu mejor opción</h2>
+    <p>Nuestro productos cuentan con los mejores estandares de calidad del mercado.</p>
+    <div class="footer__social">
+      <a href="#" class="footer__social-icon">
+        <i class="bx bxl-facebook"></i>
+      </a>
+      <a href="#" class="footer__social-icon">
+        <i class="bx bxl-instagram"></i>
+      </a>
+      <a href="#" class="footer__social-icon">
+        <i class="bx bxl-twitter"></i>
+      </a>
+    </div>
+  </div>
+  <!--=============== WISH ===============-->
+
+  <!--=============== CART ===============-->
+  <section class="cart grid--container">
+    <!--=============== CLOSE BUTTON ===============-->
+    <button type="button" class="button cart__close" title="close cart">
+      <i class='bx bx-x button--icon'></i>
+    </button>
+
+    <div class="cart__content">
+      <h2 class="cart__title">Carrito:</h2>
+      <p class="cart__description">Hay <span class="cart__count">0</span> productos agregados al carrito de compras
+      </p>
+    </div>
+
+    <div class="cart__container grid--container">
+      <div class="cart__list">
+        <!-- <article class="cart__item">
+          <div class="cart__img">
+            <img src="assets/img/hamburger.png" alt="hamburger">
+          </div>
+          <div class="cart__content">
+            <h2 class="cart__name">
+              <span>Hamburger</span>
+              <span class="cart__price">$10.00</span>
+            </h2>
+            <div class="cart__amout">
+              <div>
+                <span class="cart__subtotal">$10.00</span> x <span class="cart__quantity">1</span>
+              </div>
+              <button type="button" class="button cart__button remove--article" title="remove from cart">
+                <i class='bx bx-trash button--icon'></i>
+              </button>
+            </div>
+          </div>
+          <div class="cart__buttons">
+            <button type="button" class="button cart__button" title="remove one">
+              <i class='bx bx-minus button--icon'></i>
+            </button>
+            <span class="cart__quantity">1</span>
+            <button type="button" class="button cart__button" title="add one">
+              <i class='bx bx-plus button--icon'></i>
+            </button>
+          </div>
+        </article> -->
+      </div>
+
+      <div class="cart__discounts">
+        <label for="discount" class="cart__label">Código de descuento</label>
+        <div class="cart__group">
+          <input type="text" class="cart__input">
+          <button type="button" class="button cart__button">Aplicar</button>
+        </div>
+        <div class="cart__discount-message">
+          <p class="cart__discount-text">Se ha aplicado un descuento del <span class="cart__discount-price">10%</span>
+            al
+            total de la compra</p>
+        </div>
+      </div>
+
+      <div class="cart__footer">
+        <div class="cart__total">
+          <div>
+            <span class="cart__subtotal-title">SubTotal:</span>
+            <span class="cart__subtotal-price">$30.00</span>
+          </div>
+          <div>
+            <span class="cart__total-title">Descuento:</span>
+            <span class="cart__total-discount">0</span>
+          </div>
+          <div>
+            <span class="cart__total-title">Total:</span>
+            <span class="cart__total-price">$27.00</span>
+          </div>
+        </div>
+        <button type="button" class="button cart__button btn--comprar">Comprar</button>
+      </div>
+
+    </div>
+    </div>
+  </section>
+  <!--=============== MAIN ===============-->
+  <!-- Apartado de carrito de compras -->
+  <main class="main">
+    <section class="home section">
+      <div class="home__container grid--container">
+        <div class="home__content">
+          <h1 class="home__title">Carrito de Compras</h1>
+          <p class="home__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos vitae
+            cupiditate, consectetur at itaque ipsa quas rerum ex neque illum quibusdam doloribus sunt expedita suscipit
+            fuga facere fugiat veritatis.</p>
+        </div>
+        <div class="home__img">
+          <img src="img/equipos generales G.png" alt="products">
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de productos -->
+    <section class="products section">
+      <div class="products__container grid--container">
+        <div class="products__content">
+          <h2 id="productos" class="products__title">Productos</h2>
+          <p class="products__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel similique
+            tenetur error quos quia corrupti, beatae reiciendis, odit quae quas nisi dignissimos tempore vero distinctio
+            perferendis vitae eos sunt provident.</p>
+        </div>
+
+        <div class="products__list">
+          <!-- <article class="products__item">
+            <div class="products__img">
+              <img src="img/59d6274a3752880e93e16e9c.png" alt="hamburger">
+              <span class="products__stock">Quedan 10</span>
+            </div>
+            <div class="products__content">
+              <h2 class="products__name">
+                <span>Mancuernas con disco de acero</span>
+                <span class="products__price">$ 1,700.00 MXN</span>
+              </h2>
+              <p class="products__info">DESCRIPCIÓN DEL PRODUCTOLorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="products__buttons"> -->
+          <!-- Boton para agregar a deseados -->
+          <!-- <button class="button products__button btn--wish">
+                <i class="bx bxs-heart-circle button--icon"></i>
+              </button> -->
+          <!-- Boton para agregar al carrito -->
+          <!-- <button class="button products__button btn--cart">
+                <i class="bx bx-cart button--icon"></i>
+              </button>
+            </div>
+          </article> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Apartado NOSOTROS -->
+    <section class="about section">
+      <div class="about__container grid--container">
+        <div class="about__content">
+          <h2 id="nosotros" class="about__title">Nosotros</h2>
+          <p class="about__desciption">Somos una marca especializada en productos deportivos que puedes usar para
+            entrenar en tu hogar o en donde tú prefieras. Estamos comprometidos en la entrega de equipos de alta calidad
+            y a entregar un excelente servicio para que todos puedan hacer deporte de forma segura y entretenida.</p>
+        </div>
+        <div class="about__img">
+          <img src="img/PersonaFit.png" alt="chef">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--=============== FOOTER ===============-->
+  <footer class="footer section">
+    <div class="footer__container grid--container">
+      <div class="footer__content">
+        <h2 class="footer__title">Home GYM</h2>
+        <p class="footer__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde earum eos sequi
+          illo doloribus? Dolorem tempora vero voluptatibus rem, eum porro natus iusto hic doloribus facilis temporibus
+          excepturi quo. Ducimus!</p>
+      </div>
+      <div class="footer__social">
+        <a href="#" class="footer__social-icon">
+          <i class="bx bxl-facebook"></i>
+        </a>
+        <a href="#" class="footer__social-icon">
+          <i class="bx bxl-instagram"></i>
+        </a>
+        <a href="#" class="footer__social-icon">
+          <i class="bx bxl-twitter"></i>
+        </a>
+      </div>
+      <div class="footer__copy">
+        <p class="footer__copy-text">&copy; 2023 Home GYM G22. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
